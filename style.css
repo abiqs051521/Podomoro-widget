@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.widget {
+  width: 320px;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.timer {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.buttons button {
+  font-size: 20px;
+  margin: 0 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
