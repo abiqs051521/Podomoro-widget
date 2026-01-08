@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="widget" id="widget">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1>Focus</h1>
+      <div class="timer" id="timer">25:00</div>
+
+      <div class="buttons">
+        <button onclick="startTimer()">▶</button>
+        <button onclick="pauseTimer()">⏸</button>
+        <button onclick="resetTimer()">⟲</button>
+      </div>
+
+      <input 
+        type="text" 
+        placeholder="Pega URL de imagen de fondo"
+        id="bgInput"
+        onchange="changeBackground()"
+      >
+    </div>
+  </div>
+
+  <audio id="alarm" src="https://assets.mixkit.co/sfx/preview/mixkit-bell-notification-933.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
